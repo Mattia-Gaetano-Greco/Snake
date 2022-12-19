@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Serpente
+comment1.params=xIniziale\ yIniziale\ direzione\ codiceSerpente
+comment1.target=Serpente(int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ run()
+comment3.params=nextPosX\ nextPosY
+comment3.target=void\ sposta(int,\ int)
+comment4.params=
+comment4.target=void\ uccidi()
+comment5.params=nextX\ nextY
+comment5.target=void\ cresci(int,\ int)
+comment6.params=
+comment6.target=int\ calcolaNextCasella()
+comment7.params=x\ y
+comment7.target=void\ posizionaCorpo(int,\ int)
+numComments=8
