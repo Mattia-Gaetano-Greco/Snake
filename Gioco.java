@@ -19,14 +19,13 @@ public class Gioco
         Gioco.finestra.setResizable(false);
         Gioco.finestra.show();
         finestra.setContentPane(new JLabel(new ImageIcon("immagini/grass.jpg")));
-        //finestra.getContentPane().setBackgroundImag(Color.GREEN);
         // inizializza la matrice
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
                 if (j == 0 | j == 19 | i == 0 | i == 19) {
                     matriceGriglia[i][j] = 1;
                     // creazione immagine muro
-                    JLabel muro = new JLabel(new ImageIcon("immagini/muro2.jpg"));
+                    JLabel muro = new JLabel(new ImageIcon("immagini/water.jpg"));
                     finestra.add(muro);
                     muro.setLocation(j*50, i*50);
                     muro.setSize(50,50);

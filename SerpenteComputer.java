@@ -10,8 +10,9 @@ public class SerpenteComputer extends Serpente
 
     public void run()
     {
+		boolean alive = true;
         int[][] aggiunte = new int[][]{{0,-1}, {1,0}, {0,1}, {-1,0}};
-        while (Gioco.isGiocando == true)
+        while (Gioco.isGiocando == true && alive)
         {
             for (int i = 0; i < ThreadLocalRandom.current().nextInt(1, 3 + 1); i++) {
                 int contenuto = calcolaNextCasella();
@@ -29,7 +30,7 @@ public class SerpenteComputer extends Serpente
                 }
                 if (contenuto > 0) {
                     uccidi();
-                    stop();
+					alive = false;
                 } else if (contenuto < 0) {
                     cresci(nextX, nextY);
                 } else {

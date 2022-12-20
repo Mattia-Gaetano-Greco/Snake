@@ -30,12 +30,13 @@ public class Serpente extends Thread
     
     public void run()
     {
-        while (Gioco.isGiocando == true)
+		boolean alive = true;
+        while (Gioco.isGiocando == true && alive)
         {
             int contenuto = calcolaNextCasella();
             if (contenuto > 0) {
                 uccidi();
-                stop();
+                alive = false;
             } else if (contenuto < 0) {
                 cresci(nextX, nextY);
             } else {
