@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=SerpenteComputer
-comment1.params=posX\ posY\ direzione\ codiceSerpente
-comment1.target=SerpenteComputer(int,\ int,\ int,\ int)
-comment2.params=
-comment2.target=void\ run()
-comment3.params=
-comment3.target=void\ cambiaDirezioneRandom()
-numComments=4
