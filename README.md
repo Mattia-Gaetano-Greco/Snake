@@ -1,8 +1,16 @@
 # Snake
-Steps per eseguire il programma:
-1. Scompattare "immagini.zip"
-2. Installare la JDK sul sito https://www.oracle.com/java/technologies/downloads/#jdk19-windows
-3. Aprire CMD
-4. Spostarsi nella cartella contenente il programma
-5. eseguire il comando "javac Main.java"
-6. eseguire il comando "java Main"
+Snake con multithreading in Java
+
+![game](immagini\game.png)
+
+## Come eseguire
+
+Per eseguire il programma chiamare il metodo `main` del file `Main.java`
+
+## Come giocare
+
+Il giocatore controlla il serpente verde. Per muovere il serpente usare le frecce direzionali
+
+## Descrizione progetto
+- Per ogni serpente esiste un thread che si occupa di calcolare la sua prossima posizione
+- I serpenti NPC (guidati dal computer) calcolano la prossima mossa in modo da evitare muri e altri serpenti
