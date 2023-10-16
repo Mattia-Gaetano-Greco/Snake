@@ -1,7 +1,7 @@
 # Snake
 Snake con multithreading in Java
 
-![game](immagini\game.png)
+![game](immagini/game.png)
 
 ## Come eseguire
 
